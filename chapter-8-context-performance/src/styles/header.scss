@@ -1,0 +1,29 @@
+.header {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	border-bottom: 1px solid var(--border-color);
+	height: 4rem;
+	padding: 0 12rem;
+	display: flex;
+
+	@media (max-width: 1400px) {
+		padding: 0 var(--margin-x-xl);
+	}
+
+	@media (max-width: 995px) {
+		padding: 0 var(--margin-x-lg);
+	}
+
+	@media (max-width: 768px) {
+		padding: 0 var(--margin-x-md);
+	}
+}
+
+.header-sidebar-toggle-button {
+	all: unset;
+	width: 2rem;
+	height: 2rem;
+	margin: auto 0;
+	cursor: pointer;
+}

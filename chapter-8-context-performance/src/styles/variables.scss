@@ -1,0 +1,63 @@
+@use "sass:map";
+
+$themes: (
+	light: (
+		text: #121314,
+		background: #fcfcfd,
+		primary: #6488aa,
+		secondary: #96b5d3,
+		accent: #679dd1,
+		background-secondary: #00000008,
+	),
+	dark: (
+		text: #ecedee,
+		background: #020203,
+		primary: #55799b,
+		secondary: #2c4a68,
+		accent: #2e6599,
+		background-secondary: #ffffff08,
+	),
+);
+
+$breakpoints: (
+	xl: (
+		margin-x: 8rem,
+	),
+	lg: (
+		margin-x: 6rem,
+	),
+	md: (
+		margin-x: 4rem,
+	),
+);
+
+$border-color: #0000001a;
+$box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+
+:root {
+	--background-color-light: #{map.get($themes, light, background)};
+	--background-color-secondary-light: #{map.get(
+			$themes,
+			light,
+			background-secondary
+		)};
+	--text-color-light: #{map.get($themes, light, text)};
+	--primary-color-light: #{map.get($themes, light, primary)};
+	--secondary-color-light: #{map.get($themes, light, secondary)};
+	--accent-color-light: #{map.get($themes, light, accent)};
+	--background-color-dark: #{map.get($themes, dark, background)};
+	--background-color-secondary-dark: #{map.get(
+			$themes,
+			light,
+			background-secondary
+		)};
+	--text-color-dark: #{map.get($themes, dark, text)};
+	--primary-color-dark: #{map.get($themes, dark, primary)};
+	--secondary-color-dark: #{map.get($themes, dark, secondary)};
+	--accent-color-dark: #{map.get($themes, dark, accent)};
+	--border-color: #{$border-color};
+	--box-shadow: #{$box-shadow};
+	--margin-x-xl: #{map.get($breakpoints, xl, margin-x)};
+	--margin-x-lg: #{map.get($breakpoints, lg, margin-x)};
+	--margin-x-md: #{map.get($breakpoints, md, margin-x)};
+}

@@ -1,0 +1,28 @@
+@use "reset";
+@use "variables";
+@use "layout";
+@use "sidebar";
+@use "header";
+
+body {
+	font-family: "Inter", sans-serif;
+
+	position: relative;
+	background-color: var(--background-color-light);
+	color: var(--text-color-light);
+	margin: 0 12rem;
+	display: flex;
+	flex-direction: column;
+
+	@media (max-width: 1400px) {
+		margin: 0 var(--margin-x-xl);
+	}
+
+	@media (max-width: 995px) {
+		margin: 0 var(--margin-x-lg);
+	}
+
+	@media (max-width: 768px) {
+		margin: 0 var(--margin-x-md);
+	}
+}
