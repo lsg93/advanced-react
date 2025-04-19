@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import Sidebar from "./Sidebar";
 import Header from "./Header";
-import Block from "./Block";
 
 function PageWithoutContext() {
 	const [sidebarActive, setSidebarActive] = useState<boolean>(true);
@@ -24,16 +23,16 @@ function PageWithoutContext() {
 						sidebarActive={sidebarActive}
 					/>
 					<section className="content">
-						<Block>Block 1</Block>
-						<div className="content-block split">
-							<Block classes="content-block-child">Block 2 - section 1</Block>
-							{sidebarActive ? null : (
-								<Block classes="content-block-child">
-									Block 2 Block 3 - Only visible when nav is not expanded
-								</Block>
-							)}
-							<Block classes="content-block-child">Block 2 - Section 2</Block>
-						</div>
+						<div className="content-block">Block 1</div>
+						<section className="content-block split">
+							<div className="content-block-child">Block 2 - Section 1</div>
+							{sidebarActive ? (
+								<div className="content-block-child">
+									Block 2 Block 3 - Only visible when nav is expanded
+								</div>
+							) : null}
+							<div className="content-block-child">Block 2 - Section 2</div>
+						</section>
 					</section>
 				</div>
 			</div>
