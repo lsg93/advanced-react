@@ -12,6 +12,10 @@
 		transition: all 0.5s;
 		grid-template-columns: 0 auto;
 	}
+
+	&.using-context {
+		grid-template-columns: minmax(0, auto) 1fr;
+	}
 }
 
 .content {

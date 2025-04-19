@@ -1,7 +1,7 @@
-import PageWithoutContext from "./components/WithoutContext/PageWithoutContext";
+import PageWithContext from "./components/WithContext/PageWithContext";
 
 function App() {
-	return <PageWithoutContext />;
+	return <PageWithContext />;
 }
 
 export default App;

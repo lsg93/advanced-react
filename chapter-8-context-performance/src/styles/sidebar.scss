@@ -8,6 +8,11 @@
 	max-width: 16rem;
 	box-shadow: var(--box-shadow);
 
+	&.using-context {
+		transition: all 0.5s ease;
+		width: 16rem;
+	}
+
 	&.closed {
 		padding: 0;
 		max-width: 0;

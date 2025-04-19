@@ -1,4 +1,4 @@
-import useRerenderCount from "./hooks/useRerenderCount";
+import useRerenderCount from "../hooks/useRerenderCount";
 
 type BlockProps = {
 	children: React.ReactNode;

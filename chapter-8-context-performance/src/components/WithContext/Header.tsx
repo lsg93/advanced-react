@@ -1,7 +1,9 @@
 import HamburgerMenu from "../../assets/hamburger-menu.svg";
-import { SidebarProps } from "./Sidebar";
+import { useSidebarContext } from "./contexts/SidebarContext";
 
-function Header({ handleSidebarActive, sidebarActive }: SidebarProps) {
+function Header() {
+	const { handleSidebarActive, sidebarActive } = useSidebarContext();
+
 	return (
 		<header className="header">
 			{sidebarActive ? null : (
