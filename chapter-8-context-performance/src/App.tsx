@@ -1,7 +1,7 @@
-import PageWithContext from "./components/WithContext/PageWithContext";
+import PageWithContextThatRerenders from "./components/WithContext/PageWithContextThatRerenders";
 
 function App() {
-	return <PageWithContext />;
+	return <PageWithContextThatRerenders />;
 }
 
 export default App;
