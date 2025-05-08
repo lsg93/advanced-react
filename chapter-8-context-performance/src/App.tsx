@@ -1,7 +1,7 @@
-import PageWithContextThatRerenders from "./components/WithContext/PageWithContextThatRerenders";
+import PageWithSplitContext from "./components/WithSplitContext/PageWithSplitContext";
 
 function App() {
-	return <PageWithContextThatRerenders />;
+	return <PageWithSplitContext />;
 }
 
 export default App;
