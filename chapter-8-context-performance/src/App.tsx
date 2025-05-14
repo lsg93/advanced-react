@@ -1,7 +1,7 @@
-import PageWithSplitContext from "./components/WithSplitContext/PageWithSplitContext";
+import ContextSelectorExample from "./components/ContextSelectorExample";
 
 function App() {
-	return <PageWithSplitContext />;
+	return <ContextSelectorExample />;
 }
 
 export default App;
